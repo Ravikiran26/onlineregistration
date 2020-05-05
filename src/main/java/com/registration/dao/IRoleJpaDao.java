@@ -7,6 +7,6 @@ import com.registration.Model.User;
 
 public interface IRoleJpaDao extends JpaRepository<Roles,Long>{
 
-	User findByName(String name);
+	Roles findByName(String name);
 
 }

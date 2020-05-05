@@ -12,7 +12,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.springframework.data.annotation.Reference;
 
 @Entity
@@ -305,10 +304,11 @@ public class User {
 		return true;
 	}
 
-	@Override
-	public String toString() {
-		return new ToStringBuilder(this).append("id", id).append("name", name).append("ProsId", name)
-				.append("govtId", name).append("email", name).append("dateOfBirth", name).toString();
-	}
+	/*
+	 * @Override public String toString() { return new
+	 * ToStringBuilder(this).append("id", id).append("name", name).append("ProsId",
+	 * name) .append("govtId", name).append("email", name).append("dateOfBirth",
+	 * name).toString(); }
+	 */
 
 }

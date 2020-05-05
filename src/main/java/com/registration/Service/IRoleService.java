@@ -1,9 +1,11 @@
-package com.registration.Service;
 
-import com.registration.Model.User;
-
-public interface IRoleService {
-	
-	User findByName(String name);
-
-}
+  package com.registration.Service;
+  
+  import com.registration.Model.Roles;
+  
+  public interface IRoleService {
+  
+  Roles findByName(String name);
+  
+  }
+ 

@@ -6,8 +6,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-
 @Entity
 public class Roles {
 
@@ -68,10 +66,9 @@ public class Roles {
 			return false;
 		return true;
 	}
-
-	@Override
-	public String toString() {
-		return new ToStringBuilder(this).append("id", id).append("name", name).toString();
-	}
+	/*
+	 * @Override public String toString() { return new
+	 * ToStringBuilder(this).append("id", id).append("name", name).toString(); }
+	 */
 
 }
